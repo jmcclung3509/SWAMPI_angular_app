@@ -13,9 +13,10 @@ export class StarshipsComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.loadStarships(1)
+    this.loadStarships()
   }
-  loadStarships(page: number) {
+  loadStarships() {
+    let page = Math.floor(Math.random() * 5);
     this.http
       .get(`https://swapi.dev/api/starships/?page=${page}`)
       .subscribe((res: any) => {

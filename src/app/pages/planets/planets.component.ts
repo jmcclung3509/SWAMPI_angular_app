@@ -12,9 +12,10 @@ export class PlanetsComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.loadPlanets(1)
+    this.loadPlanets()
   }
-  loadPlanets(page: number) {
+  loadPlanets() {
+    let page = Math.floor(Math.random() * 5);
     this.http
       .get(`https://swapi.dev/api/planets/?page=${page}`)
       .subscribe((res: any) => {
