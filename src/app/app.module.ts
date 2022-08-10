@@ -8,7 +8,10 @@ import { PeopleComponent } from './pages/people/people.component';
 import { PlanetsComponent } from './pages/planets/planets.component';
 import { StarshipsComponent } from './pages/starships/starships.component';
 import { PersonComponent } from './pages/people/person/person.component';
-import {HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { PlanetComponent } from './pages/planets/planet/planet.component';
+import { StarshipComponent } from './pages/starships/starship/starship.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import {HttpClientModule} from '@angular/common/http'
     PeopleComponent,
     PlanetsComponent,
     StarshipsComponent,
-    PersonComponent
+    PersonComponent,
+    PlanetComponent,
+    StarshipComponent
   ],
   imports: [
     BrowserModule,

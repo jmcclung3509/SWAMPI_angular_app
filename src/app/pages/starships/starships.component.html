@@ -1,1 +1,7 @@
-<p>starships works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let starship of starships">
+            <app-starship [starshipInfo]="starship"></app-starship>
+        </div>
+    </div>
+</div>

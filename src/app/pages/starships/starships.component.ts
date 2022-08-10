@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-starships',
@@ -6,10 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./starships.component.css']
 })
 export class StarshipsComponent implements OnInit {
+  data: any;
+  starships: any;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.loadStarships(1)
   }
-
+  loadStarships(page: number) {
+    this.http
+      .get(`https://swapi.dev/api/starships/?page=${page}`)
+      .subscribe((res: any) => {
+        this.data = res
+        this.starships = res.results
+        console.log(this.starships)
+      })
+  }
 }
+
+
