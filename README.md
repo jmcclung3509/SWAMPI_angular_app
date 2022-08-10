@@ -1,3 +1,21 @@
+
+IDEAS/TODO
+
+
+1.Wookie langauge
+    - Toggle wookie language on with if/else wookie selected
+    -how do you get same page number
+
+2. Get More Button
+-event listenter
+-emit
+
+3. Get api data from api result
+-How?
+
+4. Search feature
+
+
 # StarWarsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
