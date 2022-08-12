@@ -4,12 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { PeopleComponent } from './pages/people/people.component';
 import { PlanetsComponent } from './pages/planets/planets.component';
 import { StarshipsComponent } from './pages/starships/starships.component';
+import { WookieComponent } from './pages/wookie/wookie.component';
 
 const routes: Routes = [
   { path: '', component: PeopleComponent },
   { path: 'people', component: PeopleComponent },
   { path: 'planets', component: PlanetsComponent },
-  { path: 'starships', component: StarshipsComponent }
+  { path: 'starships', component: StarshipsComponent },
+  { path: 'wookie', component: WookieComponent },
 ];
 
 

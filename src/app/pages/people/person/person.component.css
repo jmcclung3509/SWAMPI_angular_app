@@ -1,0 +1,19 @@
+.card {
+    background-color: rgb(2, 0, 36, 0.5);
+    box-shadow: 22px 22px 30px 1px rgba(238, 238, 238, 0.28);
+    margin: 40px;
+}
+
+.card-body ul li {
+    background-color: rgb(2, 0, 36, 0.5);
+}
+
+
+.card * {
+    color: #eeeeee;
+}
+
+.card-title {
+    padding: 10px;
+    margin: 0 auto;
+}

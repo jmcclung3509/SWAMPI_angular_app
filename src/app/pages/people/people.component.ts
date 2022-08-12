@@ -13,15 +13,17 @@ export class PeopleComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.loadPeople()
+    this.loadPeople(1)
   }
 
-  loadPeople() {
-    let page = Math.floor(Math.random() * 5);
+  loadPeople(page: number) {
+    page = Math.floor((Math.random() * 7) + 1);
+    console.log(page)
     this.http
       .get(`https://swapi.dev/api/people/?page=${page}`)
       .subscribe((res: any) => {
         this.data = res;
+        console.log(this.data)
         this.people = res.results;
         console.log(this.people)
 

@@ -11,6 +11,7 @@ import { PersonComponent } from './pages/people/person/person.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanetComponent } from './pages/planets/planet/planet.component';
 import { StarshipComponent } from './pages/starships/starship/starship.component';
+import { WookieComponent } from './pages/wookie/wookie.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { StarshipComponent } from './pages/starships/starship/starship.component
     StarshipsComponent,
     PersonComponent,
     PlanetComponent,
-    StarshipComponent
+    StarshipComponent,
+    WookieComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
 <div class="row">
-
-    <div class="col" *ngFor="let person of people">
-        <app-person [personInfo]="person"> </app-person>
+    <div class="col-12 btn-container">
+        <button class="btn primary-btn " (click)="loadPeople(1)"> Get More</button>
 
     </div>
-    <button class="btn primary-btn"> Get More</button>
-
+    <div class="col card-container" *ngFor="let person of people">
+        <app-person [personInfo]="person"> </app-person>
+    </div>
 </div>

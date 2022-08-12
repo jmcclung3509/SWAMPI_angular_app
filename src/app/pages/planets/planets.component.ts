@@ -16,7 +16,7 @@ export class PlanetsComponent implements OnInit {
   }
   loadPlanets() {
 
-    let page = Math.floor(Math.random() * 5);
+    let page = Math.floor((Math.random() * 5) + 1);
     this.http
       .get(`https://swapi.dev/api/planets/?page=${page}`)
       .subscribe((res: any) => {
