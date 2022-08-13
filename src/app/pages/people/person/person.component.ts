@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PersonComponent implements OnInit {
   @Input() personInfo: any;
+  searchText: any;
 
 
   constructor() { }

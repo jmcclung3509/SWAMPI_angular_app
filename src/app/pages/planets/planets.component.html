@@ -1,7 +1,11 @@
 <div class="container">
     <div class="row">
-        <div class="col" *ngFor="let planet of planets">
-           <app-planet [planetInfo]="planet"></app-planet>
+        <div class="col-12 btn-container">
+            <button class="more-btn " (click)="loadPlanets()"> Get More</button>
+
         </div>
+        <div class="col" *ngFor="let planet of planets">
+            <app-planet [planetInfo]="planet"></app-planet>
         </div>
     </div>
+</div>

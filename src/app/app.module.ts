@@ -1,5 +1,7 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { PlanetComponent } from './pages/planets/planet/planet.component';
 import { StarshipComponent } from './pages/starships/starship/starship.component';
 import { WookieComponent } from './pages/wookie/wookie.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
+import { SearchFilterPipe } from './search-filter.pipe';
+
+
+
 
 
 @NgModule({
@@ -24,12 +34,16 @@ import { WookieComponent } from './pages/wookie/wookie.component';
     PersonComponent,
     PlanetComponent,
     StarshipComponent,
-    WookieComponent
+    SearchFilterPipe
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    Ng2SearchPipeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

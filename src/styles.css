@@ -1,6 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(to bottom, #201c2f 0%, #08042d 100%);
+/* background-image: linear-gradient(0deg, transparent, #0D0D0D 75%); */
+* {
+    background-color: #0D0D0D;
+    font-family: 'Pathway Gothic One', sans-serif;
+    letter-spacing: .2rem;
+}
 
+body {
+    background-color: #0D0D0D !important;
+
+}
+
+.container {
+    padding-top: 40px;
+}
+
+.card {
+    background-color: #0D0D0D;
+    box-shadow: 0px 0px 20px 5px rgba(238, 238, 238, 0.75);
+    margin: 40px auto;
+}
+
+.card-body ul li {
+    background-color: #0D0D0D;
+}
+
+
+.card * {
+    color: #eeeeee;
+    background-color: #0D0D0D;
+}
+
+.card-title {
+    padding: 20px 0 10px;
+    font-size: 1.5rem;
+    margin: 0 !important;
+
+    text-align: center;
+    color: #F2E96B;
+}
+
+.list-group-item,
+ul li {
+    background-color: rgb(13, 13, 13, 0.5) !important;
+    color: #d2cece !important;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.more-btn {
+    border: 1px #F2E96B solid;
+    color: #F2E96B;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 20px auto;
+    padding: 30px 10px;
+
+}
+
+button:hover {
+    border: 1px #F2E96B dotted;
+    color: #0D0D0D;
+    background-color: #F2E96B;
+    border-radius: 50%;
+    margin: 20px auto;
+    font-weight: 600;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
 }

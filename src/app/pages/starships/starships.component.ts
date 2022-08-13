@@ -16,7 +16,7 @@ export class StarshipsComponent implements OnInit {
     this.loadStarships()
   }
   loadStarships() {
-    let page = Math.floor((Math.random() * 5) + 1);
+    let page = Math.floor((Math.random() * 3) + 1);
     this.http
       .get(`https://swapi.dev/api/starships/?page=${page}`)
       .subscribe((res: any) => {

@@ -1,22 +1,19 @@
 <div class="card" style="width: 18rem;">
-    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+
     <div class="card-body">
         <h5 class="card-title">{{starshipInfo.name | titlecase}}</h5>
-        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p> -->
+
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Class: {{starshipInfo.starship_class | titlecase}}</li>
+            <li class="list-group-item">Cost: ${{starshipInfo.cost_in_credits}} GC</li>
+            <li class="list-group-item">Atmospheric Speed: {{starshipInfo.max_atmosphering_speed}}</li>
+            <li class="list-group-item">Max time between refuels: {{starshipInfo.consumables}}</li>
+            <!-- <li class="list-group-item">Pilots: {{starshipInfo.pilots}}</li> -->
+            <li class="list-group-item">Crew: {{starshipInfo.crew}}</li>
+            <li class="list-group-item">Max passengers: {{starshipInfo.passengers}}</li>
+            <li class="list-group-item">Length: {{starshipInfo.length}}meters</li>
+        </ul>
     </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Class: {{starshipInfo.starship_class | titlecase}}</li>
-        <li class="list-group-item">Cost: ${{starshipInfo.cost_in_credits}} GC</li>
-        <li class="list-group-item">Atmospheric Speed: {{starshipInfo.max_atmosphering_speed}}</li>
-        <li class="list-group-item">Max time between refuels: {{starshipInfo.consumables}}</li>
-        <li class="list-group-item">Pilots: {{starshipInfo.pilots}}</li>
-        <li class="list-group-item">Crew: {{starshipInfo.crew}}</li>
-        <li class="list-group-item">Max passengers: {{starshipInfo.passengers}}</li>
-        <li class="list-group-item">Length: {{starshipInfo.length}}meters</li>
-    </ul>
-    <!-- <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-    </div> -->
+
 </div>

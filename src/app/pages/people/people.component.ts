@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 @Component({
   selector: 'app-people',
@@ -9,6 +12,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class PeopleComponent implements OnInit {
   data: any;
   people: any;
+  allPeople!: any;
+  searchText!: '';
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -25,10 +30,14 @@ export class PeopleComponent implements OnInit {
         this.data = res;
         console.log(this.data)
         this.people = res.results;
+        this.allPeople = this.people
         console.log(this.people)
 
 
       })
+  }
+  search(value: string): void {
+    this.people = this.allPeople.filter((val: any) => val.name.toLowerCase().includes(value))
   }
 
 }

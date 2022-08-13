@@ -1,0 +1,13 @@
+* {
+    background-color: #0D0D0D;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.card {
+    /* margin: 0; */
+    width: 24rem;
+    margin: 50px auto;
+}

@@ -1,0 +1,75 @@
+p,
+h1 {
+    color: #F2E96B;
+}
+
+p {
+    font-size: 90%;
+}
+
+.cont {
+    width: 100%;
+    height: 100vh;
+    background: #0D0D0D;
+    overflow: hidden;
+    margin: 0;
+}
+
+.fade-words {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, #0D0D0D 75%);
+    z-index: 1;
+}
+
+.starwars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    perspective: 400px;
+    text-align: center;
+}
+
+.crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+}
+
+.crawl .title p {
+    font-size: 60%;
+    text-align: center;
+}
+
+.crawl .title p,
+.crawl .title h1 {
+    color: #F2E96B;
+}
+
+.crawl .title h1 {
+    margin: 0 0 100px;
+    font-size: 250%;
+    text-transform: uppercase;
+
+}
+
+@keyframes crawl {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px)
+    }
+}

@@ -1,9 +1,15 @@
-<div class="row">
-    <div class="col-12 btn-container">
-        <button class="btn primary-btn " (click)="loadPeople(1)"> Get More</button>
+<div class="container people-container">
+    <div class="row">
+        <div class="search-hero">
+            <input class="form-control" type="text" name="search" [(ngModel)]="searchText" (input)="search(searchText)"
+                autocomplete="off" placeholder="Start searching for a person by name">
+        </div>
+        <div class="col-12 btn-container">
+            <button class="more-btn " (click)="loadPeople(1)"> Get More</button>
 
-    </div>
-    <div class="col card-container" *ngFor="let person of people">
-        <app-person [personInfo]="person"> </app-person>
+        </div>
+        <div class="col card-container" *ngFor="let person of people | searchFilter: searchText">
+            <app-person [personInfo]="person"> </app-person>
+        </div>
     </div>
 </div>
