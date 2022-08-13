@@ -32,7 +32,7 @@ p {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 500%;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: .1rem;
     line-height: 1.5;
     perspective: 400px;
     text-align: center;
@@ -72,4 +72,18 @@ p {
         top: -6000px;
         transform: rotateX(25deg) translateZ(-2500px)
     }
+}
+
+footer a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-family: "Roboto", sans-serif;
+    text-align: right;
+    padding: 5px;
+    font-size: .7rem;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
 }
