@@ -1,10 +1,14 @@
 <div class="container">
+    <div class="search-hero">
+        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" (input)="search(searchText)"
+            autocomplete="off" placeholder="Start searching for a planet by name">
+    </div>
     <div class="row">
         <div class="col-12 btn-container">
             <button class="more-btn " (click)="loadPlanets()"> Get More</button>
 
         </div>
-        <div class="col" *ngFor="let planet of planets">
+        <div class="col" *ngFor="let planet of planets | searchFilter: searchText">
             <app-planet [planetInfo]="planet"></app-planet>
         </div>
     </div>

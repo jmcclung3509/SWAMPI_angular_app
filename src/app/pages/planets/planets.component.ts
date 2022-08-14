@@ -9,6 +9,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class PlanetsComponent implements OnInit {
   data: any;
   planets: any
+  allPlanets:any;
+  searchText!:"";
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -25,6 +28,9 @@ export class PlanetsComponent implements OnInit {
         console.log(res)
         console.log(this.planets)
       })
+  }
+  search(value:any): void {
+    this.planets = this.allPlanets.filter((val:any)=>val.name.toLowerCase.includes(value))
   }
 
 }
