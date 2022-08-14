@@ -24,7 +24,27 @@ p {
     z-index: 1;
 }
 
+/* .fade-title {
+    width: 100%;
+    font-size: 200%;
+    color: #F2E96B;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-title 6s ease-out forwards;
+    animation-delay: 1s;
+
+}
+
+.fade-title h3 {
+    font-size: 100%;
+    width: 60%;
+    margin: 0;
+} */
+
 .starwars {
+    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -42,7 +62,7 @@ p {
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 60s linear;
+    animation: crawl 60s linear 1s;
 }
 
 .crawl .title {
@@ -78,17 +98,7 @@ p {
     font-size: 120%;
 }
 
-@keyframes crawl {
-    0% {
-        top: 1500px;
-        transform: rotateX(20deg) translateZ(0);
-    }
 
-    100% {
-        top: -6000px;
-        transform: rotateX(25deg) translateZ(-2500px)
-    }
-}
 
 footer a {
     text-decoration: none;
@@ -103,3 +113,36 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
+@keyframes crawl {
+    0% {
+
+        top: 1500px;
+        transform: rotateX(20deg) translateZ(0);
+    }
+
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px)
+    }
+}
+
+/* @keyframes fade-title {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0
+    }
+} */
