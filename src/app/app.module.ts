@@ -42,7 +42,7 @@ import { SearchFilterPipe } from './search-filter.pipe';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    Ng2SearchPipeModule
+    // Ng2SearchPipeModule
 
   ],
   providers: [],
