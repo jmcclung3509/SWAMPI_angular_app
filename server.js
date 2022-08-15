@@ -3,11 +3,11 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/star-wars-app'));
+app.use(express.static(_dirname + '/dist/star-wars-app'));
 
 app.get('/*', function (req, res) {
 
-    res.sendFile(path.join(__dirname + '/dist/star-wars-app/index.html'));
+    res.sendFile(path.join(_dirname + '/dist/star-wars-app/index.html'));
 });
 
 
