@@ -1,12 +1,3 @@
-p,
-h1 {
-    color: #F2E96B;
-}
-
-p {
-    font-size: 90%;
-}
-
 .cont {
     width: 100%;
     height: 100vh;
@@ -24,24 +15,6 @@ p {
     z-index: 1;
 }
 
-/* .fade-title {
-    width: 100%;
-    font-size: 200%;
-    color: #F2E96B;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fade-title 6s ease-out forwards;
-    animation-delay: 1s;
-
-}
-
-.fade-title h3 {
-    font-size: 100%;
-    width: 60%;
-    margin: 0;
-} */
 
 .starwars {
     width: 100%;
@@ -56,13 +29,35 @@ p {
     line-height: 1.5;
     perspective: 400px;
     text-align: center;
+    flex-flow: row wrap;
 }
 
+.fade-title-cont {
+    width: 100%;
+    height: 100%;
+    margin-top: 50%;
+}
+
+.fade-title {
+    width: 100%;
+    font-size: 100%;
+    color: #F2E96B;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-title 4s ease-out forwards;
+
+}
+
+
 .crawl {
+    width: 100vw;
     position: relative;
     top: 9999px;
-    transform-origin: 50% 100%;
-    animation: crawl 60s linear 1s;
+    transform-origin: 50% 0;
+    animation: crawl 60s linear 1s forwards;
+    animation-delay: 4s;
 }
 
 .crawl .title {
@@ -71,19 +66,21 @@ p {
 
 .crawl .title h3 {
     font-size: 100%;
-    text-align: center;
     margin-bottom: 30%;
 }
 
 .crawl .title p {
-    font-size: 80%;
-    text-align: center;
+    font-size: 60%;
+
+
 }
 
 .crawl .title p,
 .crawl .title h1,
 .crawl .title h3 {
     color: #F2E96B;
+    text-align: center;
+
 }
 
 .crawl .title h1 {
@@ -95,7 +92,9 @@ p {
 
 .crawl-text {
     margin-bottom: 10%;
-    font-size: 120%;
+    font-size: 100%;
+
+
 }
 
 
@@ -116,18 +115,17 @@ footer {
 
 @keyframes crawl {
     0% {
-
-        top: 1500px;
+        top: 200px;
         transform: rotateX(20deg) translateZ(0);
     }
 
     100% {
         top: -6000px;
-        transform: rotateX(25deg) translateZ(-2500px)
+        transform: rotateX(25deg) translateZ(-3000px)
     }
 }
 
-/* @keyframes fade-title {
+@keyframes fade-title {
     0% {
         opacity: 0;
     }
@@ -142,7 +140,6 @@ footer {
 
     100% {
         opacity: 0;
-        width: 0;
-        height: 0
+
     }
-} */
+}
