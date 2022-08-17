@@ -4,31 +4,33 @@
   "newProjectRoot": "projects",
   "projects": {
     "star_wars_app": {
-      "projectType": "application",
-      "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/star_wars_app",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+      "dist": {
+        "projectType": "application",
+        "schematics": {},
+        "root": "",
+        "sourceRoot": "src",
+        "prefix": "app",
+        "architect": {
+          "build": {
+            "builder": "@angular-devkit/build-angular:browser",
+            "options": {
+              "outputPath": "dist/star_wars_app",
+              "index": "src/index.html",
+              "main": "src/main.ts",
+              "polyfills": "src/polyfills.ts",
+              "tsConfig": "tsconfig.app.json",
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ],
+              "styles": [
+                "src/styles.css",
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              ],
+              "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              ]
+            }
           },
           "configurations": {
             "production": {
