@@ -14,6 +14,7 @@ p {
     position: relative;
     width: 100%;
     min-height: 60vh;
+    max-height: 100vh;
     top: -25px;
     background-image: linear-gradient(0deg, transparent, #0D0D0D 75%);
     z-index: 1;
@@ -59,8 +60,8 @@ p {
     position: relative;
     top: 1000px;
     transform-origin: 50% 0;
-    animation: crawl 50s linear 1s forwards;
-    animation-delay: 3s;
+    animation: crawl 60s linear 1s forwards;
+    animation-delay: 4s;
 }
 
 .crawl .title {
@@ -94,24 +95,6 @@ p {
 .crawl-text {
     margin-bottom: 10%;
     font-size: 75%;
-
-
-}
-
-.star_wars_hero {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-
-}
-
-.star_wars_hero h1 {
-    opacity: 0;
-    color: #F2E96B;
-    font-size: 175%;
-    animation: fade-in ease-in 1s;
-    animation-delay: 7s;
 }
 
 
@@ -127,6 +110,8 @@ footer a {
 footer {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    bottom: 0;
 }
 
 @keyframes crawl {
@@ -160,20 +145,7 @@ footer {
     }
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
 
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 @media only screen and (min-width: 768px) {
     .starwars {
